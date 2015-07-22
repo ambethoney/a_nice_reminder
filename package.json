@@ -10,6 +10,7 @@
   "mainInput": "ANiceReminderApp",
   "mainOutput": "main",
   "dependencies": {
+    "jquery": "^2.1.4",
     "normalize.css": "~3.0.3",
     "particles.js": "^2.0.0",
     "react": "0.13.x"
