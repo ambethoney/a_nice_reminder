@@ -27,27 +27,27 @@ var ANiceReminderApp = React.createClass({
       success: function(data){
         var quote = data[0].media;
         if(this.isMounted()){
+        // console.log(this)
           this.setState({
             quotes: quote
           });
         }
-      }
+      }.bind(this)
     });
   },
-  add: function(data) {
-      var arr = this.state.quotes;
-      arr.push({
-          quote: data
-      });
-      this.setState({quotes: arr});
-  },
+  // add: function(data) {
+  //     var arr = this.state.quotes;
+  //     arr.push({
+  //         quote: data
+  //     });
+  //     this.setState({quotes: arr});
+  // },
   render: function() {
     return (
       <div className="container">
-      hello world
-        <img src={this.state.quotes}/>
-        <button>Need more inspiration?</button>
+        <img src={this.state.quotes} className="import"/>
       </div>
+      // <button>Need more inspiration?</button>
 
     );
   }
