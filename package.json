@@ -9,10 +9,10 @@
   "dist": "dist",
   "mainInput": "ANiceReminderApp",
   "mainOutput": "main",
-  "scripts": {
-    "start": "node ANiceReminderApp.js"
-  },
   "dependencies": {
+     "scripts": {
+        "start": "node ANiceReminderApp.js"
+      },
     "jquery": "^2.1.4",
     "normalize.css": "~3.0.3",
     "particles.js": "^2.0.0",
