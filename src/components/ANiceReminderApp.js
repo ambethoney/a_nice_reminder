@@ -17,14 +17,14 @@ var ParticlesBG = React.createClass({
 
   componentDidMount: function(){
 
-    particlesJS.load('testing', '../json/particles.json', function() {
+    particlesJS.load('background', '../json/particles.json', function() {
     });
   },
 
 
   render: function(){
     return (
-      <div id="testing">
+      <div id="background">
         <ANiceReminderApp/>
       </div>
 
@@ -40,12 +40,15 @@ var ANiceReminderApp = React.createClass({
   },
   componentDidMount: function(){
     $.ajax({
-      url: 'http://api.theysaidso.com/qod.json',
+      url: 'https://api.nasa.gov/planetary/apod?concept_tags=True&api_key=DEMO_KEY',
       type: 'GET',
       dataType: 'JSON',
       success: function(data){
-        var quote = data.contents.quotes[0].quote;
-        $('.quote').html(quote);
+        console.log(data.url)
+        var image = document.createElement("img");
+        image.src = data.url;
+        $(image).addClass('img');
+        $('.container').append(image);
 
       }
     });
@@ -53,11 +56,9 @@ var ANiceReminderApp = React.createClass({
   render: function() {
     return (
       <div className="container">
-        <div className="inner-container">
-          <div className="quote"></div>
-        </div>
+
       </div>
-      // <button>Need more inspiration?</button>
+
 
     );
   }

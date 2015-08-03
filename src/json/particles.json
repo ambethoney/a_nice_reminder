@@ -12,7 +12,7 @@
         "value": "#CC9933"
       },
       "shape": {
-        "type": "star",
+        "type": "circle",
         "stroke": {
           "width": 0,
           "color": "#CC9933"
