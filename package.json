@@ -10,7 +10,7 @@
   "mainInput": "ANiceReminderApp",
   "mainOutput": "main",
   "scripts": {
-    "start": "node app.js"
+    "start": "node /components/app.js"
   },
   "dependencies": {
     "jquery": "^2.1.4",
