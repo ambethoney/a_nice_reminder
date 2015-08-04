@@ -24,7 +24,7 @@ var ParticlesBG = React.createClass({
 
   render: function(){
     return (
-      <div id="background">
+      <div className="background">
         <ANiceReminderApp/>
       </div>
 
