@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react/addons'),
-    $ = require('jquery');
+// var React = require('react/addons'),
+   // var  $ = require('jquery');
 
 require('particles.js/particles.js');
 
