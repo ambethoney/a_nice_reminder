@@ -1,1 +1,1 @@
-web: node ANiceReminderApp.js
+web: node /components/ANiceReminderApp.js
