@@ -17,7 +17,7 @@ var ParticlesBG = React.createClass({
 
   componentDidMount: function(){
 
-    particlesJS.load('background', '../json/particles.json', function() {
+    particlesJS.load('background', 'json/particles.json', function() {
     });
   },
 
