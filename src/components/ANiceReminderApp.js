@@ -24,7 +24,7 @@ var ParticlesBG = React.createClass({
 
   render: function(){
     return (
-      <div className="background">
+      <div id="background">
         <ANiceReminderApp/>
       </div>
 
@@ -44,8 +44,7 @@ var ANiceReminderApp = React.createClass({
       type: 'GET',
       dataType: 'JSON',
       success: function(data){
-        console.log(data.url)
-        var image = document.createElement("img");
+        var image = document.createElement('img');
         image.src = data.url;
         $(image).addClass('img');
         $('.container').append(image);
